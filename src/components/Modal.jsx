@@ -15,7 +15,14 @@ const Modal = (props) => {
       castRef.current.value &&
       gradeRef.current.value
     ) {
-      console.log("Eligible");
+      const newRecord = {
+          name: nameRef.current.value,
+          fname: fnameRef.current.value,
+          cast: castRef.current.value,
+          grade: gradeRef.current.value
+      }
+      props.addRecord([...props.allRecords, newRecord ]);
+      props.toggleModal();
     }
   }
 
