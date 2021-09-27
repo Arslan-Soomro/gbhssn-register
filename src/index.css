@@ -3,10 +3,26 @@
 @tailwind utilities;
 
 @layer base{
+    @font-face {
+        font-family: Poppins;
+        src: url('fonts/Poppins-Regular.ttf');
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: Poppins;
+        src: url('fonts/Poppins-Bold.ttf');
+        font-weight: 700;
+    }
+
     html{
         @apply w-full h-full;
     }
     body{
         @apply w-full h-full bg-gray-50;
+    }
+
+    input:focus-visible{
+        outline: none;
     }
 }
