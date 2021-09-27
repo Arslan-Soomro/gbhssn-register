@@ -69,7 +69,7 @@ const Modal = (props) => {
           <input
             type="text"
             className="py-2 px-3 sm:text-lg rounded border xs:w-72 border-gray-200"
-            placeholder="Grade"
+            placeholder="Class"
             ref={gradeRef}
           />
         </div>
